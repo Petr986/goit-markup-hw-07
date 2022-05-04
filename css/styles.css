@@ -4,7 +4,7 @@
 /* белый цвет #FFFFFF */
 /* цвет фона подвала #2f303a */
 
-:root {
+/* :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
@@ -12,9 +12,9 @@
   --footer-color: #2f303a;
   --time-for-hover: 250ms;
   --time-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
-body {
+/* body {
   font-family: Roboto, serif;
   letter-spacing: 0.03em;
 
@@ -58,8 +58,6 @@ img {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-
-  /* outline: 1px solid tomato; */
 }
 
 .section {
@@ -72,9 +70,9 @@ img {
   padding-left: 0;
   margin-top: 0;
   margin-bottom: 0;
-}
+} */
 
-.button {
+/* .button {
   width: 200px;
   height: 50px;
 
@@ -93,11 +91,11 @@ img {
   transition-property: background-color, color;
   transition-duration: var(--time-for-hover);
   transition-timing-function: var(--time-function);
-}
+} */
 
 /* блок header */
 
-.header {
+/* .header {
   background: var(--white-color);
   border-bottom: 1px solid #ececec;
 }
@@ -229,11 +227,11 @@ img {
 .site__contact--adress:hover .site__contact--icon,
 .site__contact--adress:focus .site__contact--icon {
   fill: var(--accent-color);
-}
+} */
 
 /* блок main */
 
-.hero__title {
+/* .hero__title {
   margin-bottom: 50px;
 
   font-weight: 700;
@@ -242,11 +240,11 @@ img {
   text-align: center;
 
   color: var(--title-text-color);
-}
+} */
 
 /*  блок заказа услуги */
 
-.service {
+/* .service {
   padding: 200px 0 200px 0;
   text-align: center;
   background-color: #2f303a;
@@ -299,11 +297,11 @@ img {
 
   color: var(--white-color);
   background-color: var(--accent-color);
-}
+} */
 
 /* modal block */
 
-.backdrop {
+/* .backdrop {
   position: fixed;
   z-index: 100;
   top: 0;
@@ -358,11 +356,11 @@ img {
 .modal__btn:hover,
 .modal__btn:focus {
   fill: var(--accent-color);
-}
+} */
 
 /* modal-form block */
 
-.form__title {
+/* .form__title {
   padding-top: 40px;
   padding-bottom: 12px;
 
@@ -548,11 +546,11 @@ textarea {
 
   margin: auto;
   padding-left: 56px;
-}
+} */
 
 /* блок Организационные моменты */
 
-.organization__list {
+/* .organization__list {
   display: flex;
   align-items: center;
 }
@@ -607,11 +605,11 @@ textarea {
   line-height: 1.71;
 
   color: var(--primary-text-color);
-}
+} */
 
 /* блок Чем мы занимаемся */
 
-.classes {
+/* .classes {
   padding-top: 0px;
 }
 
@@ -647,11 +645,11 @@ textarea {
 
   color: var(--white-color);
   background: rgba(47, 48, 58, 0.8);
-}
+} */
 
 /* блок наша команда */
 
-.team {
+/* .team {
   background-color: #f5f4fa;
 }
 
@@ -735,11 +733,11 @@ textarea {
 .socials__link:hover .socials__link--icon,
 .socials__link:focus .socials__link--icon {
   fill: var(--white-color);
-}
+} */
 
 /* блок Партнеры */
 
-.partners__list {
+/* .partners__list {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -781,11 +779,11 @@ textarea {
 .partners__link:hover .partners__icon,
 .partners__link:focus .partners__icon {
   fill: var(--accent-color);
-}
+} */
 
 /* блок из портфолио, оформление кнопок */
 
-.gallery__list {
+/* .gallery__list {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
@@ -917,11 +915,11 @@ textarea {
   line-height: 1.88;
 
   color: var(--primary-text-color);
-}
+} */
 
 /* блок футер */
 
-.page__footer {
+/* .page__footer {
   background-color: var(--footer-color);
   padding-top: 60px;
   padding-bottom: 60px;
@@ -1029,11 +1027,11 @@ textarea {
 .footer__socials--link:hover,
 .footer__socials--link:focus .socials-icon {
   fill: var(--white-color);
-}
+} */
 
 /* футер форма */
 
-.form {
+/* .form {
   margin-left: 93px;
 }
 
@@ -1070,4 +1068,4 @@ textarea {
 
 .footer__form--send {
   position: absolute;
-}
+} */
