@@ -7,8 +7,10 @@
     align-items: center;
 }
 
-.classes__price:not(:last-child) {
-    margin-right: 30px;
+.classes__price {
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
 }
 
 .classes__meta {

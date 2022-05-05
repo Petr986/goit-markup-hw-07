@@ -20,6 +20,17 @@
 .form__author {
     position: relative;
     margin-bottom: 10px;
+
+        &:hover .form__icon,
+        &:focus .form__icon {
+            fill: var(--accent-color);
+        
+            border-color: var(--accent-color);
+        
+            transition-property: fill, border-color;
+            transition-duration: var(--time-for-hover);
+            transition-timing-function: var(--time-function);
+        }
 }
 
 .form__author input {
@@ -32,34 +43,23 @@
     border-radius: 4px;
 
     outline: none;
-}
 
-.form__author input:hover,
-.form__author input:focus {
-    border-color: var(--accent-color);
+    &:hover,
+    &:focus {
+        border-color: var(--accent-color);
+    
+        transition-property: border-color;
+        transition-duration: var(--time-for-hover);
+        transition-timing-function: var(--time-function);
+    }
 
-    transition-property: border-color;
-    transition-duration: var(--time-for-hover);
-    transition-timing-function: var(--time-function);
-}
-
-.form__author input:focus-visible {
-    border-color: var(--accent-color);
-
-    transition-property: border-color;
-    transition-duration: var(--time-for-hover);
-    transition-timing-function: var(--time-function);
-}
-
-.form__author:hover .form__icon,
-.form__author:focus .form__icon {
-    fill: var(--accent-color);
-
-    border-color: var(--accent-color);
-
-    transition-property: fill, border-color;
-    transition-duration: var(--time-for-hover);
-    transition-timing-function: var(--time-function);
+        &:focus-visible {
+            border-color: var(--accent-color);
+        
+            transition-property: border-color;
+            transition-duration: var(--time-for-hover);
+            transition-timing-function: var(--time-function);
+        }
 }
 
 .form__name {
@@ -110,16 +110,18 @@ textarea {
     letter-spacing: 0.01em;
 
     color: rgba(117, 117, 117, 0.5);
+
+    &:hover,
+    &:focus {
+        border-color: var(--accent-color);
+    
+        transition-property: border-color;
+        transition-duration: var(--time-for-hover);
+        transition-timing-function: var(--time-function);
+    }
 }
 
-.form__textarea:hover,
-.form__textarea:focus {
-    border-color: var(--accent-color);
 
-    transition-property: border-color;
-    transition-duration: var(--time-for-hover);
-    transition-timing-function: var(--time-function);
-}
 
 .modal__check {
     display: flex;

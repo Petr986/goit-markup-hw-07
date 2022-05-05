@@ -10,6 +10,7 @@
   --accent-color: #2196f3;
   --white-color: #ffffff;
   --footer-color: #2f303a;
+  /* other */
   --time-for-hover: 250ms;
   --time-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -116,16 +117,16 @@ img {
   color: var(--accent-color);
 }
 
+.logo:focus {
+  color: #212121;
+}
+
 .header__logo {
   margin-right: 93px;
 }
 
 .header__logo--text {
   color: var(--title-text-color);
-}
-
-.logo:focus {
-  color: #212121;
 }
 
 .site__nav {
@@ -145,8 +146,7 @@ img {
   color: var(--title-text-color);
 }
 
-.site__nav .link:hover,
-.site__nav .link:focus {
+.site__nav .link:hover, .site__nav .link:focus {
   color: var(--accent-color);
 }
 
@@ -204,9 +204,13 @@ img {
   color: var(--primary-text-color);
 }
 
-.site__contact--adress:hover,
-.site__contact--adress:focus {
+.site__contact--adress:hover, .site__contact--adress:focus {
   color: var(--accent-color);
+}
+
+.site__contact--adress:hover .site__contact--icon,
+.site__contact--adress:focus .site__contact--icon {
+  fill: var(--accent-color);
 }
 
 .site__contact--icon {
@@ -215,11 +219,6 @@ img {
   transition-property: fill;
   transition-duration: var(--time-for-hover);
   transition-timing-function: var(--time-function);
-}
-
-.site__contact--adress:hover .site__contact--icon,
-.site__contact--adress:focus .site__contact--icon {
-  fill: var(--accent-color);
 }
 
 .service {
@@ -311,13 +310,12 @@ img {
   transition-timing-function: var(--time-function);
 }
 
-.modal__close {
-  cursor: pointer;
+.modal__btn:hover, .modal__btn:focus {
+  fill: var(--accent-color);
 }
 
-.modal__btn:hover,
-.modal__btn:focus {
-  fill: var(--accent-color);
+.modal__close {
+  cursor: pointer;
 }
 
 .form__title {
@@ -342,6 +340,15 @@ img {
   margin-bottom: 10px;
 }
 
+.form__author:hover .form__icon,
+.form__author:focus .form__icon {
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
+  transition-property: fill, border-color;
+  transition-duration: var(--time-for-hover);
+  transition-timing-function: var(--time-function);
+}
+
 .form__author input {
   margin-top: 4px;
   padding-left: 42px;
@@ -352,8 +359,7 @@ img {
   outline: none;
 }
 
-.form__author input:hover,
-.form__author input:focus {
+.form__author input:hover, .form__author input:focus {
   border-color: var(--accent-color);
   transition-property: border-color;
   transition-duration: var(--time-for-hover);
@@ -363,15 +369,6 @@ img {
 .form__author input:focus-visible {
   border-color: var(--accent-color);
   transition-property: border-color;
-  transition-duration: var(--time-for-hover);
-  transition-timing-function: var(--time-function);
-}
-
-.form__author:hover .form__icon,
-.form__author:focus .form__icon {
-  fill: var(--accent-color);
-  border-color: var(--accent-color);
-  transition-property: fill, border-color;
   transition-duration: var(--time-for-hover);
   transition-timing-function: var(--time-function);
 }
@@ -418,8 +415,7 @@ textarea {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.form__textarea:hover,
-.form__textarea:focus {
+.form__textarea:hover, .form__textarea:focus {
   border-color: var(--accent-color);
   transition-property: border-color;
   transition-duration: var(--time-for-hover);
@@ -491,6 +487,10 @@ textarea {
   width: 270px;
 }
 
+.organization__price:not(:last-child) {
+  margin-right: 30px;
+}
+
 .org__icon::before {
   display: block;
   content: "";
@@ -517,10 +517,6 @@ textarea {
 
 .icon-astronaut::before {
   background-image: url("../img/icon/astronaut.svg");
-}
-
-.organization__price:not(:last-child) {
-  margin-right: 30px;
 }
 
 .organization__title {
@@ -635,9 +631,13 @@ textarea {
   background-color: #fff;
 }
 
-.socials__link:hover,
-.socials__link:focus {
+.socials__link:hover, .socials__link:focus {
   background-color: var(--accent-color);
+}
+
+.socials__link:hover .socials__link--icon,
+.socials__link:focus .socials__link--icon {
+  fill: var(--white-color);
 }
 
 .socials__link--icon {
@@ -645,11 +645,6 @@ textarea {
   transition-property: fill;
   transition-duration: var(--time-for-hover);
   transition-timing-function: var(--time-function);
-}
-
-.socials__link:hover .socials__link--icon,
-.socials__link:focus .socials__link--icon {
-  fill: var(--white-color);
 }
 
 .partners__list {
@@ -661,6 +656,11 @@ textarea {
 
 .partners__price:not(:last-child) {
   margin-right: 30px;
+}
+
+.partners__price:hover .partners__link,
+.partners__price:focus .partners__link {
+  border: 1px solid var(--accent-color);
 }
 
 .partners__link {
@@ -677,9 +677,9 @@ textarea {
   transition-timing-function: var(--time-function);
 }
 
-.partners__price:hover .partners__link,
-.partners__price:focus .partners__link {
-  border: 1px solid var(--accent-color);
+.partners__link:hover .partners__icon,
+.partners__link:focus .partners__icon {
+  fill: var(--accent-color);
 }
 
 .partners__icon {
@@ -687,11 +687,6 @@ textarea {
   transition-property: fill;
   transition-duration: var(--time-for-hover);
   transition-timing-function: var(--time-function);
-}
-
-.partners__link:hover .partners__icon,
-.partners__link:focus .partners__icon {
-  fill: var(--accent-color);
 }
 
 .gallery__list {
@@ -722,8 +717,7 @@ textarea {
   color: var(--title-text-color);
 }
 
-.promo__btns:hover,
-.promo__btns:focus {
+.promo__btns:hover, .promo__btns:focus {
   color: var(--white-color);
   background-color: var(--accent-color);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -758,8 +752,7 @@ textarea {
   color: var(--title-text-color);
 }
 
-.portfolio__site:hover,
-.portfolio__site:focus {
+.portfolio__site:hover, .portfolio__site:focus {
   background: #ffffff;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -834,6 +827,7 @@ textarea {
 }
 
 .address__list {
+  width: 220px;
   margin-top: 20px;
 }
 
@@ -862,8 +856,7 @@ textarea {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.page__adress:hover,
-.page__adress:focus {
+.page__adress:hover, .page__adress:focus {
   color: var(--accent-color);
 }
 
@@ -899,8 +892,7 @@ textarea {
   background: rgba(255, 255, 255, 0.1);
 }
 
-.footer__socials--link:hover,
-.footer__socials--link:focus {
+.footer__socials--link:hover, .footer__socials--link:focus {
   background-color: var(--accent-color);
 }
 
@@ -911,8 +903,8 @@ textarea {
   fill: var(--white-color);
 }
 
-.footer__socials--link:hover,
-.footer__socials--link:focus .socials-icon {
+.footer__socials--icon:hover,
+.footer__socials--icon:focus .socials-icon {
   fill: var(--white-color);
 }
 

@@ -16,6 +16,10 @@
     text-decoration: none;
 
     color: var(--accent-color);
+
+    &:focus {
+        color: #212121;
+    }
 }
 
 .header__logo {
@@ -26,9 +30,7 @@
     color: var(--title-text-color);
 }
 
-.logo:focus {
-    color: #212121;
-}
+
 
 .site__nav {
     display: flex;
@@ -47,12 +49,14 @@
     transition-timing-function: var(--time-function);
 
     color: var(--title-text-color);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 }
 
-.site__nav .link:hover,
-.site__nav .link:focus {
-    color: var(--accent-color);
-}
+
 
 .site__nav .current {
     color: var(--accent-color);
@@ -64,26 +68,32 @@
     padding: 32px 0 32px 0;
 }
 
-.current::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -1px;
+.current {
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -1px;
 
-    display: block;
-    width: 100%;
-    height: 4px;
+        display: block;
+        width: 100%;
+        height: 4px;
 
-    border-radius: 2px;
-    background-color: var(--accent-color);
+        border-radius: 2px;
+        background-color: var(--accent-color);
+    }
 }
 
-.current:hover::after {
-    opacity: 1;
+.current {
+    &:hover::after {
+        opacity: 1;
+    }
 }
 
-.site__nav--price:not(:last-child) {
-    margin-right: 50px;
+.site__nav--price {
+    &:not(:last-child) {
+        margin-right: 50px;
+    }
 }
 
 .site__contact {
@@ -111,12 +121,19 @@
     transition-timing-function: var(--time-function);
 
     color: var(--primary-text-color);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+
+        &:hover .site__contact--icon,
+        &:focus .site__contact--icon {
+            fill: var(--accent-color);
+        }
 }
 
-.site__contact--adress:hover,
-.site__contact--adress:focus {
-    color: var(--accent-color);
-}
+
 
 .site__contact--icon {
     margin-right: 10px;
@@ -124,10 +141,6 @@
 
     transition-property: fill;
     transition-duration: var(--time-for-hover);
-    transition-timing-function: var(--time-function);
+    transition-timing-function: var(--time-function);  
 }
 
-.site__contact--adress:hover .site__contact--icon,
-.site__contact--adress:focus .site__contact--icon {
-    fill: var(--accent-color);
-}

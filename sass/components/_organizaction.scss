@@ -5,39 +5,50 @@
 
 .organization__price {
     width: 270px;
+
+        &:not(:last-child) {
+           margin-right: 30px;
+    }
 }
 
-.org__icon::before {
-    display: block;
-    content: "";
-    height: 120px;
-    margin-bottom: 30px;
-    background-size: content;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #f5f4fa;
-    border-radius: 4px;
+.org__icon {
+        &::before {
+        display: block;
+        content: "";
+        height: 120px;
+        margin-bottom: 30px;
+        background-size: content;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: #f5f4fa;
+        border-radius: 4px;
+    }
 }
 
-.icon-antenna::before {
-    background-image: url("../img/icon/antenna.svg");
+.icon-antenna {
+        &::before {
+        background-image: url("../img/icon/antenna.svg");
+    }
 }
 
-.icon-clock::before {
-    background-image: url("../img/icon/clock.svg");
+.icon-clock {
+        &::before {
+        background-image: url("../img/icon/clock.svg");
+    }
 }
 
-.icon-diagram::before {
-    background-image: url("../img/icon/diagram.svg");
+.icon-diagram {
+        &::before {
+        background-image: url("../img/icon/diagram.svg");
+    }
 }
 
-.icon-astronaut::before {
-    background-image: url("../img/icon/astronaut.svg");
+.icon-astronaut {
+        &::before {
+        background-image: url("../img/icon/astronaut.svg");
+    }
 }
 
-.organization__price:not(:last-child) {
-    margin-right: 30px;
-}
 
 .organization__title {
     margin-bottom: 10px;
